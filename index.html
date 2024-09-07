@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="parentDiv">
+
+        <header>
+
+            <div class="bankingDashboardDiv">
+                <h1>
+                    Banking Dashboard
+                </h1>
+            </div>
+            <div class="headerCl">
+                <h3>Current Balance:</h3>
+                <h2 id="balance">$1000</h2>
+            </div>
+        </header>
+
+        <div>
+            <div id="deposit">
+                <div id="depositBtnDiv">
+                    <h2>Deposit</h2>
+                    <button type="button" id="showHideBtn" class="cmnHideBtn">Show/Hide</button>
+                </div>
+                <div id="depositLogic">
+                    <div>
+                        <input type="text" placeholder="Add your Money !!!" id="addMoneyInput" class="cmnInputCls">
+                        <button type="button" id="DepositBtn" class="cmdSubmitBtn">Deposit</button>
+                    </div>
+                    <div id="congretulationMsgDiv" class="congre">
+                        <p>Congratulations your money has added !!!</p>
+                    </div>
+                    <div id="ErrMsgForDepositValue" class="ErrMsgForWithdrawalCL">
+                        <p class="para">Given value is not a Number !!!</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- withdrawal -->
+
+            <div id="withdrawal">
+                <div id="withdrawalBtnDiv">
+                    <h2>Withdrawal</h2>
+                    <button type="button" id="WithdrawalshowHideBtn" class="cmnHideBtn">Show/Hide</button>
+                </div>
+                <div id="withdrawalLogic">
+                    <div>
+                        <input type="text" placeholder="Withdrawal your Money !!!" id="withdrawalInput"
+                            class="cmnInputCls">
+                        <button type="button" id="withdrawalBtn" class="cmdSubmitBtn">Withdrawal</button>
+                    </div>
+                    <div id="congretulationMsgForWithdrawal" class="congre">
+                        <p>Congratulations your money has been Withdrawl !!!</p>
+                    </div>
+                    <div id="forWrongInputTypeErr" class="ErrMsgForWithdrawalCL">
+                        <p class="para">Given value is not a Number !!!</p>
+                    </div>
+                    <div id="ErrMsgForWithdrawal" class="ErrMsgForWithdrawalCL">
+                        <p>Your money is not Sufficient !!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+
+            <p>Developer: Anand Vishwakarma</p>
+
+            <a href="https://www.linkedin.com/in/anand-vishwakarma-7b17b7219/" target="_blank">LinkedIn</a>
+
+        </footer>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

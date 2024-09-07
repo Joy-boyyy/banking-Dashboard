@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+#parentDiv {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#deposit,
+#withdrawal {
+  margin: 3rem 0rem;
+}
+
+#depositBtnDiv,
+#withdrawalBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem;
+}
+
+#depositLogic,
+#withdrawalLogic {
+  border: 1px solid black;
+  margin-top: 0.2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  display: none;
+}
+
+.hideCls {
+  display: block !important;
+}
+
+.cmnHideBtn {
+  cursor: pointer;
+  border-radius: 8px;
+  outline: 1px solid black;
+  padding: 5px;
+  border: none;
+}
+
+.cmnHideBtn:hover {
+  background-color: rgb(99, 96, 96);
+  color: white;
+}
+
+.ErrMsgForWithdrawalCL {
+  display: none;
+}
+
+.congre {
+  margin: 10px 0px;
+  display: none;
+}
+
+.congCls {
+  display: block;
+  margin-top: 10px;
+}
+
+#DepositBtn {
+  cursor: pointer;
+}
+
+#ErrMsgForWithdrawal,
+.para {
+  color: red;
+}
+
+.headerCl {
+  display: flex;
+  align-items: center;
+}
+
+.cmnInputCls {
+  width: 90%;
+  padding: 0.5rem 0px 0.5rem 5px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid black;
+}
+
+.cmdSubmitBtn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid black;
+  cursor: pointer;
+}
+
+.cmdSubmitBtn:hover {
+  background-color: rgb(99, 96, 96);
+  color: white;
+}
+
+.bankingDashboardDiv {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  border-top: 1px solid black;
+  text-align: center;
+}
